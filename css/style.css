@@ -800,6 +800,7 @@ body {
   height: 100vh
 }
 .main__container {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -849,6 +850,7 @@ body {
   z-index: -1
 }
 .about__container {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -918,6 +920,7 @@ body {
   position: relative
 }
 .talents__container {
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -967,6 +970,9 @@ body {
 }
 .reviews {
   position: relative
+}
+.reviews__container {
+  overflow: hidden
 }
 .reviews__title {
   text-align: center
@@ -1052,6 +1058,7 @@ body {
   background-color: rgba(79,4,104,.856)
 }
 .banner__container {
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1068,6 +1075,7 @@ body {
   letter-spacing: 1px
 }
 .features__container {
+  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   row-gap: 2.3125rem
@@ -1104,6 +1112,7 @@ body {
   position: relative
 }
 .work__container {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   position: relative
