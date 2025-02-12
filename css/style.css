@@ -309,316 +309,213 @@ body {
   opacity: .6
 }
 ._watcher-view .main__title {
-  -webkit-transform: translate(0,-10000px);
-  transform: translate(0,-10000px);
   -webkit-animation: tTop 1s forwards;
   animation: tTop 1s forwards
 }
 ._watcher-view .main__subtitle {
-  -webkit-transform: translate(0,-10000px);
-  transform: translate(0,-10000px);
   -webkit-animation: tRight 1.3s forwards;
   animation: tRight 1.3s forwards
 }
 ._watcher-view .main__text {
-  -webkit-transform: translate(0,-10000px);
-  transform: translate(0,-10000px);
   -webkit-animation: tLeft 1.5s forwards;
   animation: tLeft 1.5s forwards
 }
 ._watcher-view .main__button {
-  opacity: 0;
-  -webkit-transform: translate(0,50px);
-  transform: translate(0,50px);
   -webkit-animation: aOpacity 1.7s forwards;
   animation: aOpacity 1.7s forwards
 }
 ._watcher-view .about__title {
-  -webkit-transform: translate(0,-10000px);
-  transform: translate(0,-10000px);
   -webkit-animation: tLeft 1s forwards;
   animation: tLeft 1s forwards
 }
 ._watcher-view .about__subtitle {
-  -webkit-transform: translate(0,-10000px);
-  transform: translate(0,-10000px);
   -webkit-animation: tLeft 1.3s forwards;
   animation: tLeft 1.3s forwards
 }
 ._watcher-view .about__text {
-  -webkit-transform: translate(0,-10000px);
-  transform: translate(0,-10000px);
   -webkit-animation: tLeft 1.5s forwards;
   animation: tLeft 1.5s forwards
 }
 ._watcher-view .about__img img {
-  -webkit-transform: translate(10000px,0);
-  transform: translate(10000px,0);
   -webkit-animation: tRight 1s forwards;
   animation: tRight 1s forwards
 }
 ._watcher-view .about__button {
-  -webkit-transform: translate(10000px,0);
-  transform: translate(10000px,0);
   -webkit-animation: tRight 1.3s forwards;
   animation: tRight 1.3s forwards
 }
 ._watcher-view .talents__title {
-  -webkit-transform: translate(0,-10000px);
-  transform: translate(0,-10000px);
   -webkit-animation: tLeft 1s forwards;
   animation: tLeft 1s forwards
 }
 ._watcher-view .talents__text {
-  -webkit-transform: translate(0,-10000px);
-  transform: translate(0,-10000px);
   -webkit-animation: tLeft 1.3s forwards;
   animation: tLeft 1.3s forwards
 }
 ._watcher-view .talents__img {
-  -webkit-transform: translate(0,100000px);
-  transform: translate(0,100000px);
   -webkit-animation: tBot 1.5s forwards;
   animation: tBot 1.5s forwards
 }
 ._watcher-view .talents__models {
-  opacity: 0;
-  -webkit-transform: translate(0,50px);
-  transform: translate(0,50px);
   -webkit-animation: aOpacity 1.7s forwards;
   animation: aOpacity 1.7s forwards
 }
 ._watcher-view .reviews__title {
-  -webkit-transform: translate(0,-10000px);
-  transform: translate(0,-10000px);
   -webkit-animation: tTop 1s forwards;
   animation: tTop 1s forwards
 }
 ._watcher-view .reviews__slide_1 {
-  opacity: 0;
-  -webkit-transform: translate(0,50px);
-  transform: translate(0,50px);
   -webkit-animation: aOpacity 1.3s forwards;
   animation: aOpacity 1.3s forwards
 }
 ._watcher-view .reviews__slide_2 {
-  opacity: 0;
-  -webkit-transform: translate(0,50px);
-  transform: translate(0,50px);
   -webkit-animation: aOpacity 1.5s forwards;
   animation: aOpacity 1.5s forwards
 }
 ._watcher-view .reviews__slide_3 {
-  opacity: 0;
-  -webkit-transform: translate(0,50px);
-  transform: translate(0,50px);
   -webkit-animation: aOpacity 1.7s forwards;
   animation: aOpacity 1.7s forwards
 }
 ._watcher-view .reviews__slide_4 {
-  opacity: 0;
-  -webkit-transform: translate(0,50px);
-  transform: translate(0,50px);
   -webkit-animation: aOpacity 2s forwards;
   animation: aOpacity 2s forwards
 }
 ._watcher-view .reviews__slide_5 {
-  opacity: 0;
-  -webkit-transform: translate(0,50px);
-  transform: translate(0,50px);
   -webkit-animation: aOpacity 2.3s forwards;
   animation: aOpacity 2.3s forwards
 }
 ._watcher-view .banner__title {
-  -webkit-transform: translate(0,-10000px);
-  transform: translate(0,-10000px);
   -webkit-animation: tLeft 1s forwards;
   animation: tLeft 1s forwards
 }
 ._watcher-view .banner__button {
-  -webkit-transform: translate(10000px,0);
-  transform: translate(10000px,0);
   -webkit-animation: tRight 1.3s forwards;
   animation: tRight 1.3s forwards
 }
 ._watcher-view .features__column_top_1 {
-  -webkit-transform: translate(0,-10000px);
-  transform: translate(0,-10000px);
-  -webkit-animation: tTop 1s forwards;
-  animation: tTop 1s forwards
+  -webkit-animation: tLeft 1s forwards;
+  animation: tLeft 1s forwards
 }
 ._watcher-view .features__column_top_2 {
-  -webkit-transform: translate(0,-10000px);
-  transform: translate(0,-10000px);
-  -webkit-animation: tTop 1.3s forwards;
-  animation: tTop 1.3s forwards
+  -webkit-animation: tLeft 1.3s forwards;
+  animation: tLeft 1.3s forwards
 }
 ._watcher-view .features__column_top_3 {
-  -webkit-transform: translate(0,-10000px);
-  transform: translate(0,-10000px);
-  -webkit-animation: tTop 1.5s forwards;
-  animation: tTop 1.5s forwards
+  -webkit-animation: tLeft 1.5s forwards;
+  animation: tLeft 1.5s forwards
 }
 ._watcher-view .features__column_bot_1 {
-  -webkit-transform: translate(0,100000px);
-  transform: translate(0,100000px);
-  -webkit-animation: tBot 1.7s forwards;
-  animation: tBot 1.7s forwards
+  -webkit-animation: tRight 1.7s forwards;
+  animation: tRight 1.7s forwards
 }
 ._watcher-view .features__column_bot_2 {
-  -webkit-transform: translate(0,100000px);
-  transform: translate(0,100000px);
-  -webkit-animation: tBot 2s forwards;
-  animation: tBot 2s forwards
+  -webkit-animation: tRight 2s forwards;
+  animation: tRight 2s forwards
 }
 ._watcher-view .features__column_bot_3 {
-  -webkit-transform: translate(0,100000px);
-  transform: translate(0,100000px);
-  -webkit-animation: tBot 2.3s forwards;
-  animation: tBot 2.3s forwards
+  -webkit-animation: tRight 2.3s forwards;
+  animation: tRight 2.3s forwards
 }
 ._watcher-view .features__title {
-  -webkit-transform: translate(10000px,0);
-  transform: translate(10000px,0);
   -webkit-animation: tRight .5s forwards;
   animation: tRight .5s forwards
 }
 ._watcher-view .work__title {
-  -webkit-transform: translate(0,-10000px);
-  transform: translate(0,-10000px);
-  -webkit-animation: tTop 1s forwards;
-  animation: tTop 1s forwards
+  -webkit-animation: tRight 1s forwards;
+  animation: tRight 1s forwards
 }
 ._watcher-view .work__column_1 {
-  -webkit-transform: translate(-10000px,0);
-  transform: translate(-10000px,0);
-  -webkit-animation: tLeft 1.3s forwards;
-  animation: tLeft 1.3s forwards
+  opacity: 0;
+  -webkit-animation: aOpacity 1s forwards;
+  animation: aOpacity 1s forwards
 }
 ._watcher-view .work__column_2 {
-  -webkit-transform: translate(0,100000px);
-  transform: translate(0,100000px);
-  -webkit-animation: tBot 1.5s forwards;
-  animation: tBot 1.5s forwards
+  opacity: 0;
+  -webkit-animation: aOpacity 1.3s forwards;
+  animation: aOpacity 1.3s forwards
 }
 ._watcher-view .work__column_3 {
-  -webkit-transform: translate(10000px,0);
-  transform: translate(10000px,0);
-  -webkit-animation: tRight 1.7s forwards;
-  animation: tRight 1.7s forwards
+  opacity: 0;
+  -webkit-animation: aOpacity 1.5s forwards;
+  animation: aOpacity 1.5s forwards
 }
 ._watcher-view .work__button {
-  -webkit-transform: translate(0,100000px);
-  transform: translate(0,100000px);
-  -webkit-animation: tBot 2s forwards;
-  animation: tBot 2s forwards
+  -webkit-animation: tLeft 2s forwards;
+  animation: tLeft 2s forwards
 }
 ._watcher-view .faq__title {
-  -webkit-transform: translate(0,-10000px);
-  transform: translate(0,-10000px);
   -webkit-animation: tTop .5s forwards;
   animation: tTop .5s forwards
 }
 ._watcher-view .faq__text {
-  -webkit-transform: translate(0,-10000px);
-  transform: translate(0,-10000px);
   -webkit-animation: tTop .7s forwards;
   animation: tTop .7s forwards
 }
 ._watcher-view .sp1 {
   opacity: 0;
-  -webkit-transform: translate(0,50px);
-  transform: translate(0,50px);
   -webkit-animation: aOpacity 1s forwards;
   animation: aOpacity 1s forwards
 }
 ._watcher-view .sp2 {
   opacity: 0;
-  -webkit-transform: translate(0,50px);
-  transform: translate(0,50px);
   -webkit-animation: aOpacity 1.3s forwards;
   animation: aOpacity 1.3s forwards
 }
 ._watcher-view .sp3 {
   opacity: 0;
-  -webkit-transform: translate(0,50px);
-  transform: translate(0,50px);
   -webkit-animation: aOpacity 1.5s forwards;
   animation: aOpacity 1.5s forwards
 }
 ._watcher-view .sp4 {
   opacity: 0;
-  -webkit-transform: translate(0,50px);
-  transform: translate(0,50px);
   -webkit-animation: aOpacity 1.7s forwards;
   animation: aOpacity 1.7s forwards
 }
 ._watcher-view .sp5 {
   opacity: 0;
-  -webkit-transform: translate(0,50px);
-  transform: translate(0,50px);
   -webkit-animation: aOpacity 1.9s forwards;
   animation: aOpacity 1.9s forwards
 }
 ._watcher-view .sp6 {
   opacity: 0;
-  -webkit-transform: translate(0,50px);
-  transform: translate(0,50px);
   -webkit-animation: aOpacity 2.1s forwards;
   animation: aOpacity 2.1s forwards
 }
 ._watcher-view .sp7 {
   opacity: 0;
-  -webkit-transform: translate(0,50px);
-  transform: translate(0,50px);
   -webkit-animation: aOpacity 2.3s forwards;
   animation: aOpacity 2.3s forwards
 }
 ._watcher-view .sp8 {
   opacity: 0;
-  -webkit-transform: translate(0,50px);
-  transform: translate(0,50px);
   -webkit-animation: aOpacity 2.5s forwards;
   animation: aOpacity 2.5s forwards
 }
 ._watcher-view .sp9 {
   opacity: 0;
-  -webkit-transform: translate(0,50px);
-  transform: translate(0,50px);
   -webkit-animation: aOpacity 2.7s forwards;
   animation: aOpacity 2.7s forwards
 }
 ._watcher-view .calc__title {
   opacity: 0;
-  -webkit-transform: translate(0,50px);
-  transform: translate(0,50px);
   -webkit-animation: aOpacity 1s forwards;
   animation: aOpacity 1s forwards
 }
 ._watcher-view .calc__info {
   opacity: 0;
-  -webkit-transform: translate(0,50px);
-  transform: translate(0,50px);
   -webkit-animation: aOpacity 1.3s forwards;
   animation: aOpacity 1.3s forwards
 }
 ._watcher-view .calc__result {
   opacity: 0;
-  -webkit-transform: translate(0,50px);
-  transform: translate(0,50px);
   -webkit-animation: aOpacity 1.6s forwards;
   animation: aOpacity 1.6s forwards
 }
 ._watcher-view .feedback__title {
-  -webkit-transform: translate(0,-10000px);
-  transform: translate(0,-10000px);
   -webkit-animation: tTop 1s forwards;
   animation: tTop 1s forwards
 }
 ._watcher-view .feedback__form {
-  opacity: 0;
-  -webkit-transform: translate(0,50px);
-  transform: translate(0,50px);
   -webkit-animation: aOpacity 1.5s forwards;
   animation: aOpacity 1.5s forwards
 }
