@@ -19,7 +19,7 @@ html {
   min-width: 320px
 }
 body {
-  color: #fff;
+  color: #000;
   line-height: 1;
   font-family: Inter;
   font-size: 1.25rem;
@@ -68,7 +68,7 @@ h6 {
   font-size: inherit
 }
 body {
-  background: #140413
+  background: #fff
 }
 .lock body {
   overflow: hidden;
@@ -97,6 +97,9 @@ body {
   max-width: 89.375rem;
   margin: 0 auto;
   padding: 0 .9375rem
+}
+.menu {
+  color: #fff
 }
 .menu__body {
   background-color: rgba(0,0,0,.945);
@@ -277,7 +280,8 @@ body {
   border-radius: 10px;
   box-shadow: 0 5px 0 #5a0e74;
   transition: all .3s;
-  display: inline-block
+  display: inline-block;
+  color: #fff
 }
 .title {
   font-weight: 700;
@@ -307,6 +311,9 @@ body {
 }
 .swiper-pagination-bullet-active {
   opacity: .6
+}
+._watcher-view {
+  will-change: transform
 }
 ._watcher-view .main__title {
   -webkit-animation: tTop 1s forwards;
@@ -647,7 +654,9 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  transition: all .3s
+  transition: all .3s;
+  color: #fff;
+  background-color: rgba(0,0,0,.39)
 }
 .header._header-scroll {
   background-color: rgba(0,0,0,.651);
@@ -791,7 +800,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(50,11,46,.445)
+  background-color: hsla(0,0%,100%,.774)
 }
 .main__video {
   -o-object-fit: cover;
@@ -829,7 +838,8 @@ body {
   margin-bottom: 1.875rem
 }
 .about {
-  position: relative
+  position: relative;
+  overflow: hidden
 }
 .about__icon-1 {
   position: absolute;
@@ -850,7 +860,6 @@ body {
   z-index: -1
 }
 .about__container {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -942,7 +951,7 @@ body {
   box-shadow: 0 4px 4px #dd3bd2
 }
 .talents__model {
-  background-color: #140413;
+  background-color: #ee8ae7;
   border: 1px solid #dd3bd2;
   border-radius: 30px;
   padding: 1.3125rem .9375rem
@@ -969,9 +978,7 @@ body {
   transition: all .3s
 }
 .reviews {
-  position: relative
-}
-.reviews__container {
+  position: relative;
   overflow: hidden
 }
 .reviews__title {
@@ -997,7 +1004,7 @@ body {
   max-width: 71.5rem
 }
 .reviews__review {
-  background-color: #140413;
+  background-color: #fd8df6;
   border: 1px solid #dd3bd2;
   border-radius: 30px;
   padding: 1.3125rem .9375rem
@@ -1046,7 +1053,8 @@ body {
 .banner {
   background: url(../img/bg.webp) center/cover no-repeat;
   position: relative;
-  border-radius: 30px
+  border-radius: 30px;
+  color: #fff
 }
 .banner::before {
   content: "";
@@ -1074,8 +1082,10 @@ body {
   line-height: 50px;
   letter-spacing: 1px
 }
+.features {
+  overflow: hidden
+}
 .features__container {
-  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   row-gap: 2.3125rem
@@ -1101,7 +1111,8 @@ body {
   border-radius: 30px;
   box-shadow: 0 5px 50px #5a0e74;
   text-align: center;
-  grid-column: span 3
+  grid-column: span 3;
+  color: #fff
 }
 .features__text {
   max-width: 22.9375rem;
@@ -1112,7 +1123,6 @@ body {
   position: relative
 }
 .work__container {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   position: relative
@@ -1198,7 +1208,7 @@ body {
   width: .5rem;
   height: .5rem;
   content: "";
-  background-color: #fff;
+  background-color: #000;
   border-radius: 1000px
 }
 .work__button {
@@ -1215,7 +1225,8 @@ body {
   right: 1.875rem
 }
 .faq {
-  position: relative
+  position: relative;
+  overflow: hidden
 }
 .faq__container {
   display: flex;
@@ -1224,7 +1235,7 @@ body {
   background-color: rgba(221,59,210,.4);
   padding: 2.375rem 1.25rem;
   border-radius: 30px;
-  box-shadow: 0 0 50px #dd3bd2
+  box-shadow: 0 0 10px #dd3bd2
 }
 .faq__title {
   text-align: center;
@@ -1366,16 +1377,17 @@ body {
   right: 12.5rem
 }
 .feedback {
-  position: relative
+  position: relative;
+  overflow: hidden
 }
 .feedback__title {
   text-align: center;
   margin-bottom: 1.375rem
 }
 .feedback__form {
-  background-color: rgba(51,10,47,.5);
+  background-color: rgba(51,10,47,.979);
   padding: 3.75rem 11.25rem;
-  box-shadow: 0 4px 50px #dd3bd2;
+  box-shadow: 0 4px 10px #dd3bd2;
   border-radius: 30px
 }
 .form-feedback {

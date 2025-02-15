@@ -4252,15 +4252,15 @@
             const centerPoint = this.parent.dataset.prlxCenter ? this.parent.dataset.prlxCenter : "center";
             if (positionParent.top < 30 && positionParent.bottom > -30) switch (centerPoint) {
               case "top":
-                this.offset = -1 * topToWindow;
+                this.offset = -1 * topToWindow * .5;
                 break;
 
               case "center":
-                this.offset = heightWindow / 2 - (topToWindow + heightParent / 2);
+                this.offset = (heightWindow / 2 - (topToWindow + heightParent / 2)) * .5;
                 break;
 
               case "bottom":
-                this.offset = heightWindow - (topToWindow + heightParent);
+                this.offset = (heightWindow - (topToWindow + heightParent)) * .5;
                 break;
             }
             this.value += (this.offset - this.value) / this.smooth;
@@ -4283,6 +4283,11 @@
         flsModules.parallax = new parallax_Parallax(document.querySelectorAll("[data-prlx-parent]"));
         document.querySelectorAll("[data-prlx]")?.forEach((el => {
             el.style.willChange = "transform";
+        }));
+        document.querySelectorAll("[data-prlx]")?.forEach((el => {
+            el.addEventListener("transitionend", (() => {
+                el.style.willChange = "";
+            }));
         }));
     }
     let addWindowScrollEvent = false;
