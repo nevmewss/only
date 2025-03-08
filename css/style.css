@@ -290,6 +290,9 @@ body {
 .subtitle {
   font-weight: 700
 }
+.dote {
+  font-size: 2.25rem
+}
 .swiper {
   max-width: 45.1875rem
 }
@@ -1151,17 +1154,20 @@ body {
 }
 .work__title {
   text-align: center;
-  margin-bottom: 2.1875rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .875rem
+  gap: .875rem;
+  max-width: 62.5rem;
+  margin: 0 auto;
+  margin-bottom: 2.1875rem
 }
 .work__title::after {
   content: "";
   width: 3.625rem;
   height: 3.625rem;
-  background: url(../img/work/money.webp) center/cover no-repeat
+  background: url(../img/work/money.webp) center/cover no-repeat;
+  flex: 0 0 58px
 }
 .work__row {
   display: flex;
