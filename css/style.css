@@ -239,8 +239,8 @@ body {
 .spollers__body {
   padding: 1.25rem;
   border-radius: .3125rem;
-  border: 1px solid #dd3bd2;
-  background-color: rgba(50,11,46,.5);
+  border: 1px solid #c180bb;
+  background-color: #c180bb;
   color: #fff;
   line-height: 35px
 }
@@ -1042,7 +1042,6 @@ body {
 }
 .reviews__img img {
   max-width: 100%;
-  height: 27.1875rem;
   border-radius: 30px
 }
 .reviews__info {
@@ -1123,11 +1122,9 @@ body {
   row-gap: 2.3125rem
 }
 .features__title-column {
-  font-size: 2.25rem;
   font-weight: 600;
   display: flex;
   align-items: center;
-  gap: 1.25rem;
   margin-bottom: .875rem
 }
 .features__title-column::before {
@@ -1664,6 +1661,12 @@ body {
     -moz-column-gap: 8.4375rem;
     column-gap: 8.4375rem
   }
+  .features__title-column {
+    gap: 1.25rem
+  }
+  .features__title-column {
+    font-size: 2.25rem
+  }
   .features__title {
     font-size: 3rem
   }
@@ -1817,6 +1820,12 @@ body {
     -webkit-column-gap: 1.875rem;
     -moz-column-gap: 1.875rem;
     column-gap: 1.875rem
+  }
+  .features__title-column {
+    gap: .625rem
+  }
+  .features__title-column {
+    font-size: 1.875rem
   }
   .features__title {
     font-size: 2rem
@@ -2383,6 +2392,26 @@ body {
       -webkit-column-gap: calc(1.875rem + 6.5625*(100vw - 20rem)/ 69.375);
       -moz-column-gap: calc(1.875rem + 6.5625*(100vw - 20rem)/ 69.375);
       column-gap: calc(1.875rem + 6.5625*(100vw - 20rem)/ 69.375)
+    }
+  }
+  @supports (gap:clamp(0.625rem ,0.4448198198rem + 0.9009009009vw ,1.25rem)) {
+    .features__title-column {
+      gap: clamp(.625rem ,.4448198198rem + .9009009009vw ,1.25rem)
+    }
+  }
+  @supports not (gap:clamp(0.625rem ,0.4448198198rem + 0.9009009009vw ,1.25rem)) {
+    .features__title-column {
+      gap: calc(.625rem + .625*(100vw - 20rem)/ 69.375)
+    }
+  }
+  @supports (font-size:clamp(1.875rem ,1.7668918919rem + 0.5405405405vw ,2.25rem)) {
+    .features__title-column {
+      font-size: clamp(1.875rem ,1.7668918919rem + .5405405405vw ,2.25rem)
+    }
+  }
+  @supports not (font-size:clamp(1.875rem ,1.7668918919rem + 0.5405405405vw ,2.25rem)) {
+    .features__title-column {
+      font-size: calc(1.875rem + .375*(100vw - 20rem)/ 69.375)
     }
   }
   @supports (font-size:clamp(2rem ,1.7117117117rem + 1.4414414414vw ,3rem)) {
