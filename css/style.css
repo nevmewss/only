@@ -663,10 +663,10 @@ body {
   z-index: 1000;
   transition: all .3s;
   color: #fff;
-  background-color: rgba(0,0,0,.39)
+  background-color: rgba(0,0,0,.651)
 }
 .header._header-scroll {
-  background-color: rgba(0,0,0,.651);
+  background-color: rgba(0,0,0,.781);
   position: fixed;
   top: 0;
   left: 0;
@@ -751,7 +751,8 @@ body {
   transform: rotate(-180deg)
 }
 .footer {
-  background-color: rgba(89,13,115,.6)
+  background-color: #5a0d73;
+  color: #fff
 }
 .footer__container {
   display: flex;
@@ -1543,7 +1544,7 @@ body {
 }
 @media (min-width:47.99875em) {
   .footer__social {
-    align-self: end
+    align-self: self-start
   }
 }
 @media (min-width:89.375em) {
