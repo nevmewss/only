@@ -653,8 +653,8 @@ body {
   color: red!important
 }
 .header {
-  padding-top: 2.75rem;
-  padding-bottom: 2.75rem;
+  padding-top: 2.1875rem;
+  padding-bottom: 2.1875rem;
   border-bottom: 1px solid #fad7ff;
   position: absolute;
   top: 0;
@@ -849,7 +849,9 @@ body {
 }
 .main__subtitle {
   letter-spacing: 1.5px;
-  font-weight: 700
+  font-weight: 700;
+  max-width: 56.25rem;
+  line-height: 1.1
 }
 .main__text {
   max-width: 41.6875rem;
