@@ -1145,7 +1145,8 @@ body {
   box-shadow: 0 5px 50px #5a0e74;
   text-align: center;
   grid-column: span 3;
-  color: #fff
+  color: #fff;
+  width: 100%
 }
 .features__text {
   max-width: 22.9375rem;
