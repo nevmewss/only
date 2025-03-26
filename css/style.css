@@ -354,6 +354,14 @@ body {
   -webkit-animation: tRight 1.3s forwards;
   animation: tRight 1.3s forwards
 }
+._watcher-view .result__title {
+  -webkit-animation: tLeft 1s forwards;
+  animation: tLeft 1s forwards
+}
+._watcher-view .result__slider {
+  -webkit-animation: tRight 1.3s forwards;
+  animation: tRight 1.3s forwards
+}
 ._watcher-view .talents__title {
   -webkit-animation: tLeft 1s forwards;
   animation: tLeft 1s forwards
@@ -405,6 +413,14 @@ body {
 ._watcher-view .banner__button {
   -webkit-animation: tRight 1.3s forwards;
   animation: tRight 1.3s forwards
+}
+._watcher-view .benefits__title {
+  -webkit-animation: aOpacity 1s forwards;
+  animation: aOpacity 1s forwards
+}
+._watcher-view .benefits__row {
+  -webkit-animation: aOpacity 1.3s forwards;
+  animation: aOpacity 1.3s forwards
 }
 ._watcher-view .features__column_top_1 {
   -webkit-animation: tLeft 1s forwards;
@@ -1001,6 +1017,24 @@ body {
 .model__link {
   transition: all .3s
 }
+.result__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+.result__title {
+  margin-bottom: 1.5625rem;
+  text-align: center
+}
+.result__slide {
+  text-align: center
+}
+.result__image img {
+  width: 28.125rem;
+  border-radius: 30px;
+  border: 1px solid #000
+}
 .reviews {
   position: relative;
   overflow: hidden
@@ -1115,6 +1149,55 @@ body {
   font-weight: 700;
   line-height: 50px;
   letter-spacing: 1px
+}
+.benefits__title {
+  margin-bottom: 1.25rem;
+  text-align: center
+}
+.benefits__row {
+  display: flex;
+  align-items: start;
+  gap: 1.25rem;
+  justify-content: center;
+  flex-wrap: wrap
+}
+.benefits__column {
+  color: #fff;
+  padding: 1.875rem;
+  border-radius: 30px;
+  width: 28.125rem;
+  max-width: 100%
+}
+.benefits__column-title {
+  font-weight: 600;
+  font-size: 1.5625rem;
+  text-align: center;
+  margin-bottom: 1.5625rem
+}
+.benefits__column-item:not(:last-child) {
+  margin-bottom: .9375rem
+}
+.column-ibounty {
+  background-color: #dd3bd2
+}
+.column-ibounty__list li {
+  display: flex;
+  align-items: center;
+  gap: .1875rem
+}
+.column-ibounty__list li::before {
+  content: "✅"
+}
+.column-other {
+  background-color: #8008aa
+}
+.column-other__list li {
+  display: flex;
+  align-items: center;
+  gap: .1875rem
+}
+.column-other__list li::before {
+  content: "❌"
 }
 .features {
   overflow: hidden
@@ -1567,13 +1650,19 @@ body {
   .page__about {
     margin-bottom: 6.3125rem
   }
-  .page__reviews {
-    padding-bottom: 6.3125rem
+  .page__talents {
+    margin-bottom: 6.3125rem
+  }
+  .page__result {
+    margin-bottom: 6.3125rem
   }
   .page__reviews {
-    padding-top: 6.3125rem
+    margin-bottom: 6.3125rem
   }
   .page__banner {
+    margin-bottom: 6.3125rem
+  }
+  .page__benefits {
     margin-bottom: 6.3125rem
   }
   .page__features {
@@ -1703,6 +1792,16 @@ body {
     grid-template-columns: repeat(3,1fr)
   }
 }
+@media (max-width:600px) {
+  .result__image img {
+    width: 25rem
+  }
+}
+@media (max-width:450px) {
+  .result__image img {
+    width: 18.75rem
+  }
+}
 @media (max-width:350px) {
   .talents__models {
     max-width: 16.875rem
@@ -1727,13 +1826,19 @@ body {
   .page__about {
     margin-bottom: 3.125rem
   }
-  .page__reviews {
-    padding-bottom: 4.375rem
+  .page__talents {
+    margin-bottom: 3.125rem
+  }
+  .page__result {
+    margin-bottom: 3.125rem
   }
   .page__reviews {
-    padding-top: 3.125rem
+    margin-bottom: 3.125rem
   }
   .page__banner {
+    margin-bottom: 3.125rem
+  }
+  .page__benefits {
     margin-bottom: 3.125rem
   }
   .page__features {
@@ -2074,24 +2179,34 @@ body {
       margin-bottom: calc(3.125rem + 3.1875*(100vw - 20rem)/ 69.375)
     }
   }
-  @supports (padding-bottom:clamp(4.375rem ,3.8164414414rem + 2.7927927928vw ,6.3125rem)) {
-    .page__reviews {
-      padding-bottom: clamp(4.375rem ,3.8164414414rem + 2.7927927928vw ,6.3125rem)
+  @supports (margin-bottom:clamp(3.125rem ,2.2060810811rem + 4.5945945946vw ,6.3125rem)) {
+    .page__talents {
+      margin-bottom: clamp(3.125rem ,2.2060810811rem + 4.5945945946vw ,6.3125rem)
     }
   }
-  @supports not (padding-bottom:clamp(4.375rem ,3.8164414414rem + 2.7927927928vw ,6.3125rem)) {
-    .page__reviews {
-      padding-bottom: calc(4.375rem + 1.9375*(100vw - 20rem)/ 69.375)
+  @supports not (margin-bottom:clamp(3.125rem ,2.2060810811rem + 4.5945945946vw ,6.3125rem)) {
+    .page__talents {
+      margin-bottom: calc(3.125rem + 3.1875*(100vw - 20rem)/ 69.375)
     }
   }
-  @supports (padding-top:clamp(3.125rem ,2.2060810811rem + 4.5945945946vw ,6.3125rem)) {
-    .page__reviews {
-      padding-top: clamp(3.125rem ,2.2060810811rem + 4.5945945946vw ,6.3125rem)
+  @supports (margin-bottom:clamp(3.125rem ,2.2060810811rem + 4.5945945946vw ,6.3125rem)) {
+    .page__result {
+      margin-bottom: clamp(3.125rem ,2.2060810811rem + 4.5945945946vw ,6.3125rem)
     }
   }
-  @supports not (padding-top:clamp(3.125rem ,2.2060810811rem + 4.5945945946vw ,6.3125rem)) {
+  @supports not (margin-bottom:clamp(3.125rem ,2.2060810811rem + 4.5945945946vw ,6.3125rem)) {
+    .page__result {
+      margin-bottom: calc(3.125rem + 3.1875*(100vw - 20rem)/ 69.375)
+    }
+  }
+  @supports (margin-bottom:clamp(3.125rem ,2.2060810811rem + 4.5945945946vw ,6.3125rem)) {
     .page__reviews {
-      padding-top: calc(3.125rem + 3.1875*(100vw - 20rem)/ 69.375)
+      margin-bottom: clamp(3.125rem ,2.2060810811rem + 4.5945945946vw ,6.3125rem)
+    }
+  }
+  @supports not (margin-bottom:clamp(3.125rem ,2.2060810811rem + 4.5945945946vw ,6.3125rem)) {
+    .page__reviews {
+      margin-bottom: calc(3.125rem + 3.1875*(100vw - 20rem)/ 69.375)
     }
   }
   @supports (margin-bottom:clamp(3.125rem ,2.2060810811rem + 4.5945945946vw ,6.3125rem)) {
@@ -2101,6 +2216,16 @@ body {
   }
   @supports not (margin-bottom:clamp(3.125rem ,2.2060810811rem + 4.5945945946vw ,6.3125rem)) {
     .page__banner {
+      margin-bottom: calc(3.125rem + 3.1875*(100vw - 20rem)/ 69.375)
+    }
+  }
+  @supports (margin-bottom:clamp(3.125rem ,2.2060810811rem + 4.5945945946vw ,6.3125rem)) {
+    .page__benefits {
+      margin-bottom: clamp(3.125rem ,2.2060810811rem + 4.5945945946vw ,6.3125rem)
+    }
+  }
+  @supports not (margin-bottom:clamp(3.125rem ,2.2060810811rem + 4.5945945946vw ,6.3125rem)) {
+    .page__benefits {
       margin-bottom: calc(3.125rem + 3.1875*(100vw - 20rem)/ 69.375)
     }
   }
