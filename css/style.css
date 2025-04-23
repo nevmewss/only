@@ -473,6 +473,22 @@ body {
   -webkit-animation: tLeft 2s forwards;
   animation: tLeft 2s forwards
 }
+._watcher-view .blog__title {
+  -webkit-animation: tLeft 1s forwards;
+  animation: tLeft 1s forwards
+}
+._watcher-view .blog__subtitle {
+  -webkit-animation: tRight 1.3s forwards;
+  animation: tRight 1.3s forwards
+}
+._watcher-view .blog__row {
+  -webkit-animation: aOpacity 1.5s forwards;
+  animation: aOpacity 1.5s forwards
+}
+._watcher-view .blog__btn {
+  -webkit-animation: tBot 1.7s forwards;
+  animation: tBot 1.7s forwards
+}
 ._watcher-view .faq__title {
   -webkit-animation: tTop .5s forwards;
   animation: tTop .5s forwards
@@ -681,6 +697,14 @@ body {
   content: "/";
   padding-left: .3125rem
 }
+.blog__container {
+  display: flex;
+  flex-direction: column
+}
+.blog__btn {
+  margin-top: 3.125rem;
+  align-self: center
+}
 .header {
   padding-top: 2.1875rem;
   padding-bottom: 2.1875rem;
@@ -837,6 +861,16 @@ body {
 }
 .footer__link img {
   width: 3.125rem
+}
+.footer .footer__slogan {
+  margin-bottom: 1.25rem
+}
+.footer .footer__seo {
+  max-width: 37.5rem;
+  font-size: .9375rem;
+  line-height: 1.2;
+  font-weight: 500;
+  text-decoration: underline
 }
 .page__tg {
   position: fixed;
@@ -1016,14 +1050,11 @@ body {
 }
 .talents__models {
   background-color: rgba(90,14,116,.6);
-  border-radius: 30px;
-  padding: 2.8125rem 1.625rem;
-  box-shadow: 0 4px 4px #dd3bd2
+  padding: 2.8125rem 1.625rem
 }
 .talents__model {
   background-color: #ee8ae7;
   border: 1px solid #dd3bd2;
-  border-radius: 30px;
   padding: 1.3125rem .9375rem
 }
 .model__img {
@@ -1085,12 +1116,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2.1875rem 3.25rem
+  padding: .625rem
 }
 .reviews__inwrapper {
   background-color: rgba(221,59,210,.3);
   border-radius: 30px;
-  padding: 2.875rem 5.625rem;
+  padding: .625rem;
   box-shadow: 0 4px 4px #dd3bd2;
   max-width: 100%
 }
@@ -1541,6 +1572,7 @@ body {
   border-radius: 30px
 }
 .form-feedback {
+  color: #fff;
   display: flex;
   flex-direction: column
 }
@@ -1582,8 +1614,110 @@ body {
 .form-feedback__input:focus {
   outline: 1px solid #bf00ff
 }
+.form-feedback__input[type=number] {
+  width: auto;
+  max-width: 7.5rem;
+  padding: .75rem .9375rem
+}
+.form-feedback select {
+  -webkit-appearance: none;
+  appearance: none;
+  padding: .9375rem 1.25rem;
+  border-radius: 30px;
+  border: 1px solid #dd3bd2;
+  background-color: rgba(0,0,0,0);
+  color: #dd3bd2;
+  font-weight: 700
+}
+.form-feedback select:focus {
+  outline: 1px solid #bf00ff
+}
+.form-feedback select::-webkit-input-placeholder {
+  color: #dd3bd2
+}
+.form-feedback select:-ms-input-placeholder {
+  color: #dd3bd2
+}
+.form-feedback select::-ms-input-placeholder {
+  color: #dd3bd2
+}
+.form-feedback select::placeholder {
+  color: #dd3bd2
+}
 .form-feedback__button {
   align-self: center
+}
+.form-feedback {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.375rem
+}
+.form-feedback__row {
+  display: flex;
+  gap: 1.375rem;
+  flex-wrap: wrap
+}
+.form-feedback__item {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column
+}
+.form-feedback__item_full {
+  flex: 1 1 100%
+}
+.form-feedback__item label {
+  margin-bottom: .625rem;
+  font-weight: 700;
+  color: #dd3bd2
+}
+.form-feedback select,
+.form-feedback__input {
+  border: 1px solid #dd3bd2;
+  color: #dd3bd2;
+  padding: .9375rem 1.25rem;
+  border-radius: 30px;
+  font-weight: 700;
+  background: rgba(0,0,0,0)
+}
+.form-feedback select::-webkit-input-placeholder,
+.form-feedback__input::-webkit-input-placeholder {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #dd3bd2
+}
+.form-feedback select:-ms-input-placeholder,
+.form-feedback__input:-ms-input-placeholder {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #dd3bd2
+}
+.form-feedback select::-ms-input-placeholder,
+.form-feedback__input::-ms-input-placeholder {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #dd3bd2
+}
+.form-feedback select::placeholder,
+.form-feedback__input::placeholder {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #dd3bd2
+}
+.form-feedback select:focus,
+.form-feedback__input:focus {
+  outline: 1px solid #bf00ff
+}
+.form-feedback__input[type=number] {
+  max-width: 9.375rem
+}
+.form-feedback .textarea {
+  height: 17.5rem;
+  resize: vertical
+}
+.form-feedback__button {
+  align-self: center;
+  margin-top: 1.25rem
 }
 .textarea {
   border: 1px solid #dd3bd2;
@@ -1684,6 +1818,33 @@ body {
 .blog-page__text p:not(:last-child) {
   margin-bottom: 1.25rem
 }
+.video__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+.video__title {
+  margin-bottom: 1.25rem
+}
+.video__wrapper-yt {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  width: 100%;
+  background: #000;
+  border-radius: 12px
+}
+.video__wrapper-yt iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0
+}
 .swiper {
   overflow: hidden
 }
@@ -1771,7 +1932,7 @@ body {
   .page__calc {
     margin-bottom: 6.3125rem
   }
-  .page__feedback {
+  .page__video {
     margin-bottom: 6.3125rem
   }
   .main__title {
@@ -1977,7 +2138,7 @@ body {
   .page__calc {
     margin-bottom: 3.125rem
   }
-  .page__feedback {
+  .page__video {
     margin-bottom: 3.125rem
   }
   .main__title {
@@ -2186,6 +2347,9 @@ body {
   .form-feedback__item_big {
     flex-direction: column
   }
+  .form-feedback__row {
+    flex-direction: column
+  }
   .feedback__icon_1 {
     display: none
   }
@@ -2210,6 +2374,9 @@ body {
 @media (max-width:47.99875em) {
   .spollers__title {
     padding: 1.25rem .625rem
+  }
+  .blog__btn {
+    padding: 1.25rem
   }
   .header_blog {
     font-size: 1rem
@@ -2452,12 +2619,12 @@ body {
     }
   }
   @supports (margin-bottom:clamp(3.125rem ,2.2060810811rem + 4.5945945946vw ,6.3125rem)) {
-    .page__feedback {
+    .page__video {
       margin-bottom: clamp(3.125rem ,2.2060810811rem + 4.5945945946vw ,6.3125rem)
     }
   }
   @supports not (margin-bottom:clamp(3.125rem ,2.2060810811rem + 4.5945945946vw ,6.3125rem)) {
-    .page__feedback {
+    .page__video {
       margin-bottom: calc(3.125rem + 3.1875*(100vw - 20rem)/ 69.375)
     }
   }
